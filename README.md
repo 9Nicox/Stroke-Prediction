@@ -1,4 +1,4 @@
-# Stroke-Recovery-Prediction
+# Stroke-Prediction
 ML project aimed at find variables able to predict stroke risk
 
 # Context : 
