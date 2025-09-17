@@ -44,3 +44,7 @@ Neural Network: AUC = XX
 Age
 Hypertension
 BMI
+
+# Clinical interpretation
+
+To be completed
