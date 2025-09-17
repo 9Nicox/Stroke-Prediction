@@ -1,5 +1,5 @@
 # Stroke-Recovery-Prediction
-ML project aimed at find variables able to explain recovery in stroke population
+ML project aimed at find variables able to predict stroke risk
 
 # Context : 
 Stroke is a major cause of disability and mortality.
