@@ -8,9 +8,9 @@ This work is not intended for direct medical use, but illustrates how data scien
 
 
 # Dataset :
-Name: Stroke Prediction Dataset (Kaggle).
+Name: Brain Stroke Dataset (Kaggle).
 Size: ~5,000 patients, 10 clinical variables.
-Link: [Kaggle Dataset](url)
+Link: [[Kaggle Dataset](https://www.kaggle.com/datasets/jillanisofttech/brain-stroke-dataset)](url)
 Main variables: age, gender, hypertension, cardiac history, BMI, smoking.
 
 # Methodology : 
