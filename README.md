@@ -1,50 +1,45 @@
-# Stroke-Prediction
-ML project aimed at find variables able to predict stroke risk
+# 🧠 Stroke Prediction – Don’t Be Fooled by Big Numbers
 
-# Context : 
-Stroke is a major cause of disability and mortality.
-The objective of this project is to explore the use of machine learning to predict the probability of stroke based on simple clinical data (age, hypertension, BMI, lifestyle habits, etc.).
-This work is not intended for direct medical use, but illustrates how data science approaches can be applied to clinical data to generate useful insights.
+## 📌 Description
+This project explores the prediction of stroke risk using the [Kaggle Stroke Prediction dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset).  
+The main goal is to highlight the challenges of **imbalanced datasets** and to show why metrics like **accuracy can be misleading** in a medical context.
+
+## 📊 Dataset
+- **Source**: Kaggle – Stroke Prediction Dataset  
+- **Target variable**: `stroke` (binary classification)  
+- **Class imbalance**:  
+  - Non-stroke: ~95%  
+  - Stroke: ~5%  
+
+⚠️ This imbalance makes prediction difficult and explains why high accuracy is not always meaningful.
+
+## ⚙️ Methods
+- **Exploratory Data Analysis (EDA)**  
+- **Decision Tree Classifier** → first model with very high accuracy but poor recall  
+- **Handling imbalance**: stratified split, class weighting  
+- **Hyperparameter tuning**  
+- **Evaluation metrics**: Accuracy, Recall, F1-score, ROC-AUC, Confusion Matrix  
+
+## 🧾 Key Takeaways
+- A model can achieve **95% accuracy** simply by predicting "non-stroke" for everyone.  
+- **Recall and ROC-AUC** are more appropriate metrics for evaluating medical prediction models.  
+- Feature importance analysis highlights age, hypertension, and heart disease as strong predictors.  
+- Proper handling of imbalance (e.g., class weights) significantly improves the model’s usefulness.
+
+## 📂 Repository Structure
+Stroke-Prediction/
+├── notebooks/
+│ └── stroke-prediction.ipynb
+├── figures/ # (plots and visualizations - to be added later)
+└── README.md
 
 
-# Dataset :
-Name: Brain Stroke Dataset (Kaggle).
-Size: ~5,000 patients, 10 clinical variables.
-Link: [[Kaggle Dataset](https://www.kaggle.com/datasets/jillanisofttech/brain-stroke-dataset)](url)
-Main variables: age, gender, hypertension, cardiac history, BMI, smoking.
+## 🚀 Next Steps
+- Add SHAP analysis for interpretability  
+- Try oversampling/undersampling techniques (SMOTE, random under/oversampling)  
+- Compare with more models (e.g., Logistic Regression, Random Forest, XGBoost)  
 
-# Methodology : 
-  Exploratory data analysis (EDA)
-Descriptive analysis of variables.
-Visualizations: age distribution, BMI, correlations.
+---
 
-  Preprocessing & Feature Engineering
-Cleaning missing values.
-Creating derived variables (e.g., categorized age, binary obesity).
-
-  Modeling
-Logistic regression (baseline).
-Random Forest / XGBoost.
-Simple neural network (Keras).
-
-  Evaluation
-Accuracy, F1-score, AUC.
-Confusion matrix.
-
-  Explainability
-SHAP values for XGBoost.
-Identification of the most predictive clinical variables.
-
-# Results (to be completed) : 
-Logistic Regression: AUC = XX
-XGBoost: AUC = XX
-Neural Network: AUC = XX
-
-  Top features (SHAP importance):
-Age
-Hypertension
-BMI
-
-# Clinical interpretation
-
-To be completed
+✍️ Author: Nicolas (9Nicox)  
+📅 Initial work: 2023 – Updated 2025  
