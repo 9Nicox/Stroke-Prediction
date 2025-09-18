@@ -28,9 +28,13 @@ The main goal is to highlight the challenges of **imbalanced datasets** and to s
 
 ## 📂 Repository Structure
 Stroke-Prediction/
+
 ├── notebooks/
+
 │ └── stroke-prediction.ipynb
+
 ├── figures/ # (plots and visualizations - to be added later)
+
 └── README.md
 
 
